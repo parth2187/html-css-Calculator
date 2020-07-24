@@ -1,0 +1,24 @@
+body {
+    background-color: lightblue;
+    align-self: center;
+}
+.display-grid {
+    display: grid;
+    background-color:#1b262c;
+    width:480px;
+    height: 100px;
+}
+.main-grid {
+    display: inline-grid;
+    width: 480px;
+    height: 110px;
+    grid-template-columns: 120px 120px 120px 120px;
+}
+
+.grid-num {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
