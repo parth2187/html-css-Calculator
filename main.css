@@ -7,18 +7,17 @@ body {
   background-color: #1b262c;
   width: 480px;
   height: 100px;
-  border-radius: 5px;
-  margin-left: 500px;
-  margin-top: 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
 }
 .main-grid {
   display: grid;
   width: 480px;
   height: 110px;
-  grid-template-columns: 120px 120px 120px 120px;
+  grid-template-columns: repeat(4, 1fr);
   position: relative;
-  margin-left: 500px;
-  margin-top: 0px;;
+  margin: 0 auto;
 }
 
 .grid-num {
@@ -30,14 +29,7 @@ body {
   font-family: "Oxygen Mono", monospace;
 }
 
-h1 {
-  color: white;
-  text-align:right;
-  font-size: 45px;
-  margin-right: 20px;
-}
-
-.grid-button {
+.grid-ac {
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
@@ -49,8 +41,18 @@ h1 {
 .grid-equal-button {
   background-color: #ebecf1;
   border: 1px solid black;
-  padding: 20px;
+  padding-top: 140px;
   font-size: 30px;
   text-align: center;
-  
+  grid-row: span 4;
+
+  /* grid-column: 4;
+  grid-row: 2/6; */
+}
+
+#screen-text {
+  color: white;
+  text-align: right;
+  font-size: 45px;
+  padding: 30px;
 }
