@@ -2,17 +2,28 @@ body {
   background-color: lightblue;
 }
 
+* {
+  font-family: "Oxygen Mono", monospace;
+}
+
 .display-grid {
   background-color: #1b262c;
-  width: 480px;
-  height: 100px;
+  max-width: 480px;
   margin: 0 auto;
 }
+
+#screen-text {
+  color: white;
+  text-align: right;
+  font-size: 45px;
+  padding: 30px;
+  margin: 0;
+}
+
 .main-grid {
   display: grid;
-  margin: auto;
+  margin: 0 auto;
   max-width: 480px;
-  height: 110px;
   grid-template-columns: repeat(4, 1fr);
   position: relative;
 }
@@ -22,7 +33,6 @@ body {
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  font-family: "Oxygen Mono", monospace;
 }
 
 .grid-ac {
@@ -30,7 +40,6 @@ body {
   font-size: 30px;
   text-align: center;
   background-color: #ebecf1;
-  font-family: "Oxygen Mono", monospace;
 }
 
 .grid-equal-button {
@@ -39,52 +48,20 @@ body {
   font-size: 30px;
   text-align: center;
   grid-row: span 3;
-  font-family: "Oxygen Mono", monospace;
   vertical-align: middle;
 }
 
 .grid-c {
   background-color: #32e0c4;
-  font-family: "Oxygen Mono", monospace;
   font-size: 30px;
   text-align: center;
   padding: 20px;
 }
-#screen-text {
-  color: white;
-  text-align: right;
-  font-size: 45px;
-  padding: 30px;
-}
-.grid-plus {
+
+.grid-operator {
   background-color: #393e46;
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  font-family: "Oxygen Mono", monospace;
-  color: white;
-}
-.grid-times {
-  background-color: #393e46;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "Oxygen Mono", monospace;
-  color: white;
-}
-.grid-sub {
-  background-color: #393e46;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "Oxygen Mono", monospace;
-  color: white;
-}
-.grid-divide {
-  background-color: #393e46;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  font-family: "Oxygen Mono", monospace;
   color: white;
 }
