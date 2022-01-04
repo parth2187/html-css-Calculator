@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <title>Calculator UI</title>
-  </head>
 
-  <body>
-    <div class="display-grid">
-      <h1 id="screen-text">0</h1>
-    <div class="main-grid">
-      <div class="grid-operator">+</div>
-      <div class="grid-operator">-</div>
-      <div class="grid-operator">&times;</div>
-      <div class="grid-operator">&divide;</div>
-      <div class="grid-num">7</div>
-      <div class="grid-num">8</div>
-      <div class="grid-num">9</div>
-      <div class="grid-equal-button">=</div>
-      <div class="grid-num">4</div>
-      <div class="grid-num">5</div>
-      <div class="grid-num">6</div>
-      <div class="grid-num">1</div>
-      <div class="grid-num">2</div>
-      <div class="grid-num">3</div>
-      <div class="grid-num">0</div>
-      <div class="grid-num">.</div>
-      <div class="grid-ac">AC</div>
-      <div class="grid-c">C</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+
+  <title>Calculator UI</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="result">
+      <!-- <input type="text" name="number" id="result-text"> -->
+      <span id="result-text">H1</span>
+      <div class="main-grid">
+        <!-- operator buttons -->
+        <input type="button" value="+" class="grid-operator">
+        <input type="button" value="-" class="grid-operator">
+        <input type="button" value="&times" class="grid-operator">
+        <input type="button" value="&divide" class="grid-operator">
+        <!-- numpad buttons -->
+        <input type="button" value="7" class="grid-numpad button">
+        <input type="button" value="8" class="grid-numpad button">
+        <input type="button" value="9" class="grid-numpad button">
+
+        <input type="button" value="=" class="equal-btn">
+
+        <!-- <div class="grid-equal-button"></div> -->
+        <input type="button" value="4" class="grid-numpad" onclick="display('4')">
+        <input type="button" value="5" class="grid-numpad">
+        <input type="button" value="6" class="grid-numpad">
+
+        <input type="button" value="1" class="grid-numpad">
+        <input type="button" value="2" class="grid-numpad">
+        <input type="button" value="3" class="grid-numpad">
+        <input type="button" value="0" class="grid-numpad">
+        <input type="button" value="." class="grid-numpad">
+
+        <input type="button" value="AC" class="grid-ac">
+
+        <input type="button" value="C" class="clear-btn">
+      </div>
     </div>
   </div>
-  </body>
+
+  <script src="/index.js"></script>
+</body>
+
 </html>

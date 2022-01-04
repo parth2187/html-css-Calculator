@@ -1,63 +1,94 @@
-body {
-  background-color: lightblue;
-  /* display: flex;  */
-  justify-content: center;
-  align-items: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-* {
+body {
+  background: linear-gradient(135deg, #0ff0b3, #036ed9);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
   font-family: "Oxygen Mono", monospace;
 }
 
-.display-grid {
-  background-color: #1b262c;
-  max-width: 480px;
-  margin: 20vh auto;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-#screen-text {
+.result {
   color: white;
+  margin: 10vh auto;
+  box-shadow: 3px 3px 12px black;
+}
+
+#result-text {
+  background-color: #1b262c;
+  max-width: 480px;
   text-align: right;
   font-size: 45px;
   padding: 30px;
-  margin: 0;
+  color: white;
+  border: none;
 }
-
 .main-grid {
   display: grid;
-  margin: 0 auto;
   max-width: 480px;
   grid-template-columns: repeat(4, 1fr);
-  position: relative;
 }
 
-.grid-num {
+.grid-numpad {
   background-color: #ebecf1;
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
+.grid-numpad:hover {
+  background-color: #dfe1e6;
+  transition: 0.3s;
+}
+.grid-operator:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.equal-btn:hover,
+.clear-btn:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
 .grid-ac {
   padding: 20px;
   font-size: 30px;
   text-align: center;
   background-color: #ebecf1;
+  cursor: pointer;
+  border: none;
 }
 
-.grid-equal-button {
+.equal-btn {
   background-color: #32e0c4;
   padding: 50px;
   font-size: 30px;
   text-align: center;
   grid-row: span 3;
+  border: none;
+  cursor: pointer;
 }
 
-.grid-c {
+.clear-btn {
   background-color: #32e0c4;
   font-size: 30px;
   text-align: center;
   padding: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .grid-operator {
@@ -66,4 +97,6 @@ body {
   font-size: 30px;
   text-align: center;
   color: white;
+  border: none;
+  cursor: pointer;
 }
